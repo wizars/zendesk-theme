@@ -1,54 +1,250 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style type="text/css">
-  body {
-    margin:0 0 0 0;
-    padding:0 0 0 0 !important;
-    background-color: #ffffff !important;
-    font-size:10pt;
-    font-family:'Lucida Grande',Verdana,Arial,sans-serif;
-    line-height:14px;
-    color:#303030; }
-  td img {display:block;}
-  a {color:#865827;text-decoration:underline;}
-  a:hover {text-decoration: underline;color:#865827;}
-  a img {text-decoration:none;}
-  a:visited {color: #865827;}
-  a:active {color: #865827;}
-  a[href] {color: #15c;}
-  h1 {font-size: 18pt; color:#865827; line-height: 20px;}
-  h3 {font-size: 14pt; color:#865827; line-height: 20px;}
-  h4 {font-size: 10pt; color:#58585a;}
-  p {font-size: 10pt;}
-  </style>
-</head>
-<body>
-<div style="text-align: center; font-size:7pt;"><span style="color: #777777;">{{delimiter}}</span></div>
-  <table width="100%" border="0" cellpadding="5" cellspacing="0" style="border-collapse: collapse;">
-    <tr>
-      <td style ="text-align: left;" align="left" colspan="3">
-        {{content}}
-      </td>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONT IMPORT ! -->
+    <!--  Not sure if importing fonts will work properly, I provide fall back to the fonts used for the body -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" /> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/css">
+      body {
+        margin: 0 0 0 0;
+        padding: 0 0 0 0 !important;
+        background-color: #ffffff !important;
+        font-size: 10pt;
+        font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+        line-height: 14px;
+        color: #303030;
+      }
+      td img {
+        display: block;
+      }
+      a {
+        color: #865827;
+        text-decoration: underline;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: #865827;
+      }
+      a img {
+        text-decoration: none;
+      }
+      a:visited {
+        color: #865827;
+      }
+      a:active {
+        color: #865827;
+      }
+      a[href] {
+        color: #15c;
+      }
+      h1 {
+        font-size: 18pt;
+        color: #865827;
+        line-height: 20px;
+      }
+      h3 {
+        font-size: 14pt;
+        color: #865827;
+        line-height: 20px;
+      }
+      h4 {
+        font-size: 10pt;
+        color: #58585a;
+      }
+      p {
+        font-size: 10pt;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div style="text-align: center; font-size:7pt;"><span style="color: #777777;">{{delimiter}}</span></div> -->
+
+    <table
+      width="100%"
+      cellpadding="5"
+      cellspacing="0"
+      style="border-collapse: collapse"
+      style="background-color: #2b3e4d !important"
+    >
+      <tr>
+        <!-- CONTENT ROW-->
+
+        <td style="text-align: left" colspan="3">{{content}}</td>
       </tr>
-       <tr>
-      <td  align="left">
-        <a href="https://igerent.com"><img src="https://igerent.com/logotagline.jpg" alt="igerent" border="0"></a>
-      </td>
-      <td style="font-size:10px; color:#777;width: 200px" align="right">
-          Contact details:<br>
-          United States: <strong>+1 305 257-9442</strong><br>
-          Europe: <strong>+34 910 782 483</strong><br>
-          email: <strong><a href="mailto:contact@igerent.com" rel="noreferrer" target="_blank">contact@igerent.com</a></strong>
-      </td>
-    </tr>
-    <tr>
-      <td style ="text-align: justify;font-size: 12px; line-height: 14px; color: #777;" colspan="3">
-        CONFIDENTIALITY NOTICE: If you are not the intended recipient you are notified that disclosing, copying, distributing or taking any action in reliance on the contents of this information is strictly prohibited. If you have received this email in error, please kindly notify the sender or <a href="mailto:contact@igerent.com" rel="noreferrer" target="_blank">contact@igerent.com</a> immediately and DESTROY the material received.
-      </td>
-    </tr>
-  </table>
-</body>
+
+      <tr>
+        <!-- HEADER PRHASE ROW  -->
+        <td
+          colspan="3"
+          style="
+            text-align: center;
+            font-size: 16px;
+            font-family: Roboto, 'Lucida Grande', Verdana, Arial, sans-serif;
+            font-weight: 700;
+            background-color: #2b3e4d;
+            color: white;
+            line-height: 19px;
+            padding-top: 17px;
+            padding-left: 10px;
+            padding-right: 10px;
+          "
+        >
+          Contact us using one of the following options:
+        </td>
+      </tr>
+
+      <!-- BLOCKS ROW -->
+      <tr
+        style="
+          border-collapse: collapse;
+          text-align: center;
+          margin-left: auto;
+          margin-right: auto;
+          background-color: #2b3e4d;
+        "
+      >
+        <td colspan="3">
+          <!-- EMAIL BLOCK -->
+          <table style="display: inline">
+            <tr>
+              <!-- <td style="background-color: cornflowerblue"> -->
+              <td style="padding-left: 10px">
+                <a href="mailto:contact@igerent.com" rel="noreferrer" target="_blank">
+                  <img src="/envelope.png" alt="E-mail" width="45px"
+                /></a>
+              </td>
+              <td>
+                <p
+                  style="
+                    color: white;
+                    font-family: Roboto, 'Lucida Grande', Verdana, Arial, sans-serif;
+                    font-weight: 500;
+                    line-height: 17px;
+                    max-width: 187px;
+                    padding-left: 5px;
+                    padding-right: 10px;
+                  "
+                >
+                  <a
+                    href="mailto:contact@igerent.com"
+                    rel="noreferrer"
+                    target="_blank"
+                    style="color: white; text-decoration: none"
+                  >
+                    Reply to this email or write to contact@igerent.com
+                  </a>
+                </p>
+              </td>
+            </tr>
+          </table>
+
+          <!-- CHAT BLOCK -->
+          <table style="display: inline">
+            <tr>
+              <!-- <td style="background-color: cornflowerblue"> -->
+              <td style="padding-left: 10px">
+                <a href="CHAT-LINK" rel="noreferrer" target="_blank">
+                  <img src="/chat.png" alt="Chat" width="45px"
+                /></a>
+              </td>
+              <td>
+                <p
+                  style="
+                    color: white;
+                    font-family: Roboto, 'Lucida Grande', Verdana, Arial, sans-serif;
+                    font-weight: 500;
+                    line-height: 17px;
+                    max-width: 187px;
+                    padding-left: 5px;
+                    padding-right: 10px;
+                  "
+                >
+                  <a
+                    href="CHAT-LINK"
+                    rel="noreferrer"
+                    target="_blank"
+                    style="color: white; text-decoration: none"
+                  >
+                    Head over to igerent.com and use our live chat
+                  </a>
+                </p>
+              </td>
+            </tr>
+          </table>
+
+          <!-- PHONE BLOCK -->
+          <table style="display: inline">
+            <tr>
+              <!-- <td style="background-color: cornflowerblue"> -->
+              <td style="padding-left: 10px">
+                <a href="tel:+1 (305) 257-9442" rel="noreferrer" target="_blank">
+                  <img src="/phone.png" alt="Phone" width="45px"
+                /></a>
+              </td>
+              <td>
+                <p
+                  style="
+                    color: white;
+                    font-family: Roboto, 'Lucida Grande', Verdana, Arial, sans-serif;
+                    font-weight: 500;
+                    line-height: 17px;
+                    max-width: 187px;
+                    padding-left: 5px;
+                    padding-right: 10px;
+                  "
+                >
+                  <a
+                    href="tel:+1 (305) 257-9442"
+                    rel="noreferrer"
+                    target="_blank"
+                    style="color: white; text-decoration: none"
+                  >
+                    Call us: +1 (305) 257-9442 or +34 910 816 904
+                  </a>
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CONFIDENTIALITY ROW -->
+      <tr>
+        <td
+          style="
+            font-family: Roboto, 'Lucida Grande', Verdana, Arial, sans-serif;
+            text-align: center;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14px;
+            color: #6f6f6f;
+            background-color: white;
+          "
+          colspan="3"
+        >
+          <p style="max-width: 800px; margin: auto">
+            CONFIDENTIALITY NOTICE: If you are not the intended recipient you are notified that
+            disclosing, copying, distributing or taking any action in reliance on the contents of
+            this information is strictly prohibited. If you have received this email in error,
+            please kindly notify the sender or
+            <a
+              href="mailto:contact@igerent.com"
+              rel="noreferrer"
+              target="_blank"
+              style="color: #6f6f6f; text-decoration: none"
+              >contact@igerent.com</a
+            >
+            immediately and DESTROY the material received.
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>
